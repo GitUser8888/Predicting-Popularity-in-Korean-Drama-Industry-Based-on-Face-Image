@@ -102,7 +102,7 @@ def main():
     ("Photo Upload", "Live Cam"))
 
     st.sidebar.info('Images and video footage will not be stored. They will only be used for prediction within this app.')
-    st.sidebar.info('DISCLAIMER: Contents from this app are for information purposes only, and does not guarantee any outcome or results. This machine learning model is also not 100% accurate. The creator of this app will not be responsible for any damages or losses incurred.')
+    st.sidebar.info('DISCLAIMER: Contents from this app are for information purposes only, and does not guarantee any outcome or results. This machine learning model is not perfect, and also not 100% accurate. The creator of this app will not be responsible for any damages or losses incurred.')
     st.sidebar.info('Like this app? Reach out to the creator via LinkedIn https://www.linkedin.com/in/jackson-tin/ ')
 
 #    st.title('Potential Popularity Predictor')
