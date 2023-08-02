@@ -161,7 +161,7 @@ def main():
     with tab2:
         st.write("# What's the point of this?")
         st.write('The South Korean entertainment industry is fiercely competitive and burgeoning with potential talents. Current manual scouting methods may not fully capture the breadth of this potential')
-        st.write('This project aims to deploy a prototype machine learning model to quickly predict potential success in the South Korean entertainment industry based on face images. The model is trained using face images of a number of very popular Korean male actors and a number of not so popular Korean male actors.')
+        st.write('This project aims to deploy a prototype machine learning model to aid in the talent scouting process through quickly predicting potential success in the South Korean entertainment industry based on face images. The model is trained using face images of a number of very popular Korean male actors and a number of not so popular Korean male actors for classification.')
         st.write('___')
         st.write("# Why do looks matter?")
         st.write('- Looks are not everything, but your visuals make the first impression, more so in the entertainment industry.')
@@ -170,7 +170,7 @@ def main():
         st.write('___')
         st.write("# Future Work")
         st.write('- This project is done in a limited timeframe of 2 weeks as a prototype, and is **far from perfect**.')
-        st.write('- I intend to further train the machine learning model with much more face images and data to improve the prediction. ')
+        st.write('- I intend to further refine the machine learning model with much more face images and data to improve the prediction, as well as deploy the model on a platform with more functionalities such as batch upload and dashboards. ')
         st.write('- The scope can also be expaned to other regions including Japan. ')
 
 if __name__ == '__main__':
