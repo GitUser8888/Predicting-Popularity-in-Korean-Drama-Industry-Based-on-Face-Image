@@ -12,7 +12,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from pycaret.classification import load_model as load_pycaret_model, predict_model
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.models import load_model as load_keras_model
-import urllib.request
+# import urllib.request
+import requests
 import os
 
 # Load your trained model using PyCaret load_model
@@ -33,7 +34,9 @@ h5_file_url = "https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Dr
 h5_file_name = "EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5"
 
 if not os.path.isfile(h5_file_name):
-    urllib.request.urlretrieve(h5_file_url, h5_file_name)
+    response = requests.get(h5_file_url)
+    with open(h5_file_name, 'wb') as f:
+        f.write(response.content)
 
 # Use the trained encoder to reduce the dimensionality of the features
 @st.cache_resource
