@@ -13,6 +13,7 @@ from pycaret.classification import load_model as load_pycaret_model, predict_mod
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.models import load_model as load_keras_model
 import urllib.request
+import os
 
 # Load your trained model using PyCaret load_model
 @st.cache_resource
