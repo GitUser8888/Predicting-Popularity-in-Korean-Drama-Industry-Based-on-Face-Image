@@ -12,6 +12,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from pycaret.classification import load_model as load_pycaret_model, predict_model
 from tensorflow.keras.applications import EfficientNetB0
 from tensorflow.keras.models import load_model as load_keras_model
+import urllib.request
 
 # Load your trained model using PyCaret load_model
 @st.cache_resource
@@ -25,10 +26,18 @@ def set_model():
 # Load EfficientNetB0 model for feature extraction
 base_model_efficientnet = EfficientNetB0(weights='imagenet', include_top=False)
 
+
+
+h5_file_url = "https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/blob/main/streamlit/EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5"
+h5_file_name = "EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5"
+
+if not os.path.isfile(h5_file_name):
+    urllib.request.urlretrieve(h5_file_url, h5_file_name)
+
 # Use the trained encoder to reduce the dimensionality of the features
 @st.cache_resource
 def load_encoder():
-    h5_encoder = load_keras_model('https://raw.githubusercontent.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/main/streamlit/EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5')
+    h5_encoder = load_keras_model(h5_file_name)
     return h5_encoder
 
 encoder = load_encoder()
