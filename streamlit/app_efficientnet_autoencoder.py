@@ -16,11 +16,23 @@ from tensorflow.keras.models import load_model as load_keras_model
 import requests
 import os
 import h5py
+import pickle
+
+pkl_file_url = "https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/raw/main/streamlit/tuned_lda_efficientnet2_5folds_0.8513train_0.8194val_512batch_5fold_50epoch_0.2test(LATEST).pkl"
+pkl_file_name = "tuned_lda_efficientnet2_5folds_0.8513train_0.8194val_512batch_5fold_50epoch_0.2test(LATEST).pkl"
+
+if not os.path.isfile(pkl_file_name):
+    response = requests.get(pkl_file_url)
+    with open(pkl_file_name, 'wb') as f:
+        f.write(response.content)
+
+with open(pkl_file_name, 'rb') as f:
+    p = pickle.load(f)
 
 # Load your trained model using PyCaret load_model
 @st.cache_resource
 def set_model():
-    loaded_model_efficientnet = load_pycaret_model('https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/raw/main/streamlit/tuned_lda_efficientnet2_5folds_0.8513train_0.8194val_512batch_5fold_50epoch_0.2test(LATEST).pkl')
+    loaded_model_efficientnet = load_pycaret_model(p)
     return loaded_model_efficientnet
 # tuned_lda_efficientnet2_5folds_0.8513train_0.8194val_512batch_5fold_50epoch_0.2test(LATEST) / EfficientNet_BatchSize512_25 epochs_test size_0.2encoder (LATEST)
 # tuned_et_efficientnet5_extra_0.9129train_0.8191val_256batchsize_10fold_25epoch_0.2test (LATEST) / EfficientNet_BatchSize256_25 epochs_test size_0.2encoder (LATEST)
