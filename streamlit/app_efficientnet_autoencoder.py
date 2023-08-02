@@ -15,6 +15,7 @@ from tensorflow.keras.models import load_model as load_keras_model
 # import urllib.request
 import requests
 import os
+import h5py
 
 # Load your trained model using PyCaret load_model
 @st.cache_resource
@@ -37,11 +38,12 @@ if not os.path.isfile(h5_file_name):
     response = requests.get(h5_file_url)
     with open(h5_file_name, 'wb') as f:
         f.write(response.content)
+f = h5py.File(h5_file_name, 'r')
 
 # Use the trained encoder to reduce the dimensionality of the features
 @st.cache_resource
 def load_encoder():
-    h5_encoder = load_keras_model(h5_file_name)
+    h5_encoder = load_keras_model(f)
     return h5_encoder
 
 encoder = load_encoder()
