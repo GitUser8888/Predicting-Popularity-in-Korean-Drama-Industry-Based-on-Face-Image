@@ -5,6 +5,5 @@ numpy
 tensorflow == 2.13.0
 keras == 2.13.1
 pycaret == 3.0.4
-os
 requests
 h5py
