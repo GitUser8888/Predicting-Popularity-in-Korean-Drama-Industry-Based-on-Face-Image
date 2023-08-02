@@ -30,7 +30,7 @@ base_model_efficientnet = EfficientNetB0(weights='imagenet', include_top=False)
 
 
 
-h5_file_url = "https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/blob/main/streamlit/EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5?raw=true"
+h5_file_url = "https://github.com/GitUser8888/Predicting-Popularity-in-Korean-Drama-Industry-Based-on-Face-Image/raw/main/streamlit/EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5"
 h5_file_name = "EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5"
 
 if not os.path.isfile(h5_file_name):
