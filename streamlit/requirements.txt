@@ -1,0 +1,8 @@
+streamlit
+pandas
+scikit-learn == 1.2.1
+PIL
+numpy
+tensorflow == 2.13.0
+keras == 2.13.1
+pycaret == 3.0.4
