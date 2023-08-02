@@ -109,7 +109,7 @@ def main():
 
     with tab1:
         st.title('Potential Popularity Predictor')
-        st.write('I built a machine learning model using face images of South Korean male actors together with their respective popularity level.') 
+        st.write('I built a machine learning model using face images of South Korean male actors and their respective popularity level. The model will take an image as an input to predict if the subject in the image will potentially be popular based on what the model has learnt from the face images of South Korean male actors.') 
         st.write('Select from the sidebar to choose if you want to upload an image or use your webcam, then hit the Predict button.')
         st.write('___')
 
