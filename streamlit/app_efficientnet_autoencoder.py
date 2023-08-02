@@ -28,7 +28,7 @@ base_model_efficientnet = EfficientNetB0(weights='imagenet', include_top=False)
 # Use the trained encoder to reduce the dimensionality of the features
 @st.cache_resource
 def load_encoder():
-    h5_encoder = load_keras_model('EfficientNet_BatchSize512_50 epochs_test size_0.2encoder.h5')
+    h5_encoder = load_keras_model('EfficientNet_BatchSize512_50epochs_testsize_0.2encoder.h5')
     return h5_encoder
 
 encoder = load_encoder()
