@@ -26,13 +26,13 @@ if not os.path.isfile(pkl_file_name):
     with open(pkl_file_name, 'wb') as f:
         f.write(response.content)
 
-with open(pkl_file_name, 'rb') as f:
-    p = pickle.load(f)
+# with open(pkl_file_name, 'rb') as f:
+#     p = pickle.load(f)
 
 # Load your trained model using PyCaret load_model
 @st.cache_resource
 def set_model():
-    loaded_model_efficientnet = load_pycaret_model(p)
+    loaded_model_efficientnet = load_pycaret_model(pkl_file_name)
     return loaded_model_efficientnet
 # tuned_lda_efficientnet2_5folds_0.8513train_0.8194val_512batch_5fold_50epoch_0.2test(LATEST) / EfficientNet_BatchSize512_25 epochs_test size_0.2encoder (LATEST)
 # tuned_et_efficientnet5_extra_0.9129train_0.8191val_256batchsize_10fold_25epoch_0.2test (LATEST) / EfficientNet_BatchSize256_25 epochs_test size_0.2encoder (LATEST)
