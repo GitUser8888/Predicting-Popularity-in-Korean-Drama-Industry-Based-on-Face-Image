@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import numpy as np
-# import cv2
-# from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
-# import av
 from tensorflow.keras.models import Model
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
