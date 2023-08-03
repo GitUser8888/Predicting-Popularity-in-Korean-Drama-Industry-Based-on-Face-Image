@@ -7,4 +7,3 @@ keras == 2.13.1
 pycaret == 3.0.4
 requests
 h5py
-pickle
