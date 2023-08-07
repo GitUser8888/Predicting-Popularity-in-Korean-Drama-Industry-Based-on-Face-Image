@@ -44,7 +44,7 @@ Below is a summary table for the best models for each category:
 
 |Model Type|Model|Train Score|Test Score|AUC Score|
 |:---:|:---:|:---:|:---:|:---:|
-|<font color="blue">EfficientNetB0 + Autoencoder</font>|<font color="blue">Linear Discriminant Analysis</font>|<font color="blue">0.8513</font>|<font color="blue">0.8194/font>|<font color="blue">0.8853/font>|
+|<font color="blue">EfficientNetB0 + Autoencoder</font>|<font color="blue">Linear Discriminant Analysis</font>|<font color="blue">0.8513</font>|<font color="blue">0.8194</font>|<font color="blue">0.8853</font>|
 |VGG16|Extreme Gradient Boosting|0.8571|0.7960|0.8622|
 |VGG16 + Autoencoder|Extreme Gradient Boosting|0.7752|0.7520|0.8451|
 |VGGFace|Extreme Gradient Boosting|0.8563|0.7724|0.8433|
