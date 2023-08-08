@@ -1,4 +1,4 @@
-# Predicting Popularity in Korean Drama Industry Based on Face Image
+# Face Value: Using AI to Predict Stardom in South Korean Drama Industry
 
 ## Introduction
 
