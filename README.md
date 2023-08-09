@@ -7,7 +7,7 @@ The global popularity of South Korean dramas and actors had seen a significant s
 
 ## Motivation of this Project
 
-The South Korean entertainment industry is fiercely competitive and burgeoning with potential talents. Current manual scouting methods may not fully capture the breadth of this potential
+The South Korean entertainment industry is fiercely competitive and burgeoning with potential talents. Current manual scouting methods may not fully capture the breadth of this potential. 
 Scouting is also subject to the bias of the individual talent scouts themselves.
 
 Other factors aside from looks determine how popular or successful the actor is, however, looks make the first impression, more so in the entertainment industry where visuals are the content. For other things like acting skills, dancing skills, vocals, these can be trained. On the other hand, for looks, we are either born with it or enhanced to a certain extent through invasive procedures.
@@ -20,7 +20,7 @@ Names, number of “hearts”, and face images of male South Korean actors from 
 
 The data from a total of 490 South Korean male actors will be used in this modelling. The top 241 actors will be assigned the class "very popular", and the remaining 249 actors will be assigned "not so popular".
 
-The face images are organised into separate folders with their respective popularity tier
+The face images are organised into separate folders with their respective popularity tier.
 
 ## Modeling
 
