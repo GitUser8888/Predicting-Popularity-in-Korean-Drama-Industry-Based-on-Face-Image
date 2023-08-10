@@ -61,12 +61,14 @@ The best model used EfficientNetB0 for feature extraction, and autoencoder for r
 
 ## Future Works
 
-1. Expand definition of success to include more metrics including net worth, brand endorsements, drama ratings and others.
+1. Expand feature extraction to include specific landmarks of the face, and possible development as a tool to aid cosmetic surgeons
 
-2. Expand regional scope to Japan, Taiwan, outside of Asia.
+2. Refine definition of success to include more metrics such as net worth, brand endorsements, drama ratings and others when data and resources are available
 
-3. Add more actors, as well as many more images per actor.
+3. Further finetune the model with more actors, as well as many more images per actor, and female actors
 
-4. Train using neural networks when there are more data, and explore adding a third class of popularity
+4. Train using neural networks when there are more data, and explore adding a third tier of popularity
 
-5. Deploy model on a platform with more capabilities such as batch upload and dashboard
+5. Explore expanding regional scope to Japan, Taiwan, outside of Asia etc.
+   
+6. Deploy model on a platform with more capabilities such as batch upload and dashboard
