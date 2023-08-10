@@ -1,5 +1,8 @@
 # Face Value: Using AI to Predict Stardom in South Korean Drama Industry
-
+---
+### [Link to demo video](https://1drv.ms/v/s!AlJSQo61kGkvhYcDklX3PVgUN1NzKA)<br>
+### [Link to Streamlit demo](https://korean-drama-face-popularity-predictor.streamlit.app/)
+---
 ## Introduction
 
 The global popularity of South Korean dramas and actors had seen a significant surge in the past decade, largely due to the increasing influence of the Korean Wave, also known as "Hallyu". The Korean Wave is a term used to describe the spread of South Korean culture around the world. The global reach of streaming platforms like Netflix has also significantly contributed to the international popularity of K-dramas and Korean actors.
